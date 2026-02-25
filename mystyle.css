@@ -6,7 +6,12 @@ body{
     font-family: arial;
     background-color: beige;
 }
-
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
 
 /*utilities*/
 .container{
@@ -14,7 +19,62 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
+.menu .link-hl{
+    color:orange;
+}
 
+/*menu*/
+.menu a{
+    color:black;
+    margin-right: 30px;
+    font-weight: bold;
+}
+
+/*header*/
+.site-init{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+}
+
+.dish-month-container{
+    display: flex;
+    align-items: center;
+    height: 500px;
+}
+.dish-month-img{
+    width: 40%;
+}
+.dish-month-text{
+    width: 60%;
+}
+.text-flex{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+}
+.btn{
+    background-color: #222222;
+    color:white;
+    padding:10px;
+    border:none;
+}
+.text-sm{
+    font-size: 14px;
+}
+.text-lg{
+    font-size: 20px;
+}
+.all-dishes-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 10px;
+}
+.dish-item{
+    border: 1px solid black;
+}
 /*menu.html*/
 .menu-table,th,td{
     border:1px solid black;
@@ -34,4 +94,28 @@ body{
 
 .error{
     background-color: rgb(244, 102, 102);
+}
+
+/* go.html*/
+.form-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.form-container{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+.input-control{
+    margin:20px auto;
+}
+.input-control input,
+.input-control select,
+.input-control textarea{
+    width: 100%;
+    padding:5px;
+}
+.input-control label{
+    font-size: 12px;
 }
